@@ -154,8 +154,8 @@
 					<configuration>
 						<checkModificationExcludes>
 								<checkModificationExclude>pom.xml</checkModificationExclude>
-								<checkModificationExclude>src/com/infinitet3ch/jsonb/ParserException.java</checkModificationExclude>
-								<checkModificationExclude>src/com/infinitet3ch/jsonb/Reflection.java</checkModificationExclude>
+								<checkModificationExclude>src/main/java/com/infinitet3ch/jsonb/ParserException.java</checkModificationExclude>
+								<checkModificationExclude>src/main/java/com/infinitet3ch/jsonb/Reflection.java</checkModificationExclude>
 						</checkModificationExcludes>
 					</configuration>
 				</plugin>
