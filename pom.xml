@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.infinitet3ch.jsonbr</groupId>
 	<artifactId>jsonb</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 
 	<name>JSONB java reflection</name>
 	<description>JSONB reflection for unofficial JSONB C library</description>
@@ -35,7 +35,7 @@
 		<connection>scm:git:git://github.com/nadirhamid/jsonb-java.git</connection>
 		<developerConnection>scm:git:git@github.com:nadirhamid/jsonb-java.git</developerConnection>
 		<url>https://github.com/nadirhamid/jsonb-java</url>
-		<tag>HEAD</tag>
+		<tag>jsonb-0.1.0</tag>
 	</scm>
 
 	<distributionManagement>
@@ -148,6 +148,17 @@
 			</resource>
 		</resources>
 		<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<configuration>
+						<checkModificationExcludes>
+								<checkModificationExclude>pom.xml</checkModificationExclude>
+								<checkModificationExclude>src/com/infinitet3ch/jsonb/ParserException.java</checkModificationExclude>
+								<checkModificationExclude>src/com/infinitet3ch/jsonb/Reflection.java</checkModificationExclude>
+						</checkModificationExcludes>
+					</configuration>
+				</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
